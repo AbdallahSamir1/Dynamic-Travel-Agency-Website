@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body
+ {
+  font-family: Arial, sans-serif;
+  line-height: 1.4;
+}
+
+header
+ {
+  position:absolute;
+  top: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  z-index: 100;
+  background:#162330;
+}
+
+.nav-container 
+{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.logo 
+{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color:white;
+  align-items: center;
+  column-gap:  0.5rem;
+
+}
+.logo .bx 
+{
+  font-size: 24px;
+  color:white;
+
+}
+.btn
+{
+  padding: 8px 22px;
+  background:white;
+  border-radius: 5rem;
+  text-decoration: none;
+}
+.btn:hover
+{
+  background:#0882f4;
+
+}
+
+
+
+.nav-links 
+{
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a 
+{
+  color:white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+ .nav-links a:hover 
+{
+   text-decoration: underline; 
+} 
+#language-selector {
+  margin-left: 15px;
+  padding: 5px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* About  */
+.about {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.about-img img {
+  border-radius: 3rem 0 3rem 3rem;
+  height: 500px;
+  width: 100%;
+  padding: 0 2rem;
+  object-fit: cover;
+}
+
+.about-text {
+  margin-right: 10rem;
+  margin-left: 3rem;
+}
+
+.about-text h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #0882f4;
+  font-weight: bold;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.about-text p {
+  font-size: 1rem;
+  margin: 1rem 0;
+  color: #162330;
+}
+
+.about .btn {
+  padding: 0.9rem 1.4rem;
+  background-color: #162330;
+  color: #fff;
+  border: none;
+  border-radius: 5rem;
+  transition: background-color 0.3s ease;
+}
+
+.about .btn:hover {
+  background-color: #0882f4;
+}
+
+/*sales*/
+.sales-section
+ {
+  margin-bottom: 40px; 
+  }
+.sales-container
+ {
+ margin-top: 30px;
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 2rem;
+ padding: 0 2rem;
+}
+.h h2 span
+{
+  font-weight: 600px;
+  color: #0882f4;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+
+
+}
+.h h2 
+{
+  font-weight: 600px;
+  color: #162330;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  text-align: center;
+
+}
+
+
+.sales-box {
+ padding: 20px;
+ background-color: #fff;
+ border-radius: 8px;
+ box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+ overflow: hidden;
+ transition: transform 0.3s;
+ text-align: center;
+ border-radius: 2rem;
+ text-decoration: none;
+ color: #162330; 
+}
+
+.sales-box:hover {
+ background: #162330;
+ color: white; 
+ transition: 0.4s all linear;
+ transform: translateY(-15px);
+ cursor: pointer;
+}
+
+.sales-box:hover h3,
+.sales-box:hover p {
+ color: white; 
+}
+
+.sales-box .bx {
+ padding: 10px;
+ border-radius: 50%;
+ background: white;
+ color: #162330;
+ font-size: 20px;
+}
+
+.sales-box h3 {
+ font-size: 1.1rem;
+ margin: 1rem 0 0.4rem;
+ color: black;
+}
+
+.sales-box p {
+ font-size: 0.938rem; 
+ color: #162330;
+}
+
+
+/* Footer */
+.footer {
+  background-color: #162330;
+  text-align: center;
+  padding: 3rem 1.5rem;
+  color: white;
+}
+
+.footer .fot {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer .fot .info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #f3f4f6;
+}
+
+.footer .fot .info a {
+  color: white;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer .fot .info a i {
+  margin-right: 0.8rem;
+  font-size: 1.6rem;
+  transition: transform 0.3s ease;
+}
+
+.footer .fot .info a:hover i {
+  color: #0882f4;
+  transform: translateX(5px);
+}
+
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212; /* Opposite of light mode (white) */
+  color: #f0f0f0; /* Opposite of dark text */
+}
+
+body.dark-mode a {
+  color: #00b0ff; /* Contrasting color for links */
+}
+
+body.dark-mode header {
+  background-color: #1e1e1e; /* Opposite of light header */
+}
+
+body.dark-mode .btn {
+  background-color: #1e1e1e;
+  color: #f0f0f0 !important;
+}
+
+body.dark-mode .btn:hover,
+body.dark-mode .btn1:hover {
+  background-color: #00b0ff;
+  color: white;
+}
+
+body.dark-mode .gallery-card {
+  background-color: #1e1e1e; /* Dark background */
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1); /* Subtle contrast */
+}
+
+body.dark-mode .gallery-card h3 {
+  color: #00b0ff; /* Contrasting color for headings */
+}
+
+body.dark-mode .price-bold {
+  color: #00b0ff; /* Highlight prices */
+}
+
+body.dark-mode .footer {
+  background-color: #1e1e1e; /* Opposite of light footer */
+  color: #f0f0f0;
+}
+
+body.dark-mode .footer .info a {
+  color: #00b0ff; /* Contrasting color for footer links */
+}

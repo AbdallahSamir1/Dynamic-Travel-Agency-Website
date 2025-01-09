@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Sections</title>
+    <link rel="stylesheet" href="hotel1.css">
+    <script src="hotel2.js"></script>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+          <a href="home.html" class="logo"><i class='bx bxs-home'></i>STDA Travel Agency</a>
+          <nav>
+            <ul class="nav-links">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="hotels.html">Hotels</a></li>
+              <li><a href="transportation.html">Transportation</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </nav>
+          <select id="language-selector">
+            <option value="en">English</option>
+            <option value="es">Español</option>
+            <option value="fr">Français</option>
+          </select>
+          <button id="toggle-dark-mode" class="btn">Light Mode</button>
+          <a href="login.php" class="btn">Log In</a>
+        </div>
+      </header>
+
+
+    <section id="rooms" class="section">
+        <h2 class="section-title">Our Rooms</h2>
+        <p class="section-subtitle">Exceptuer sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+        <div class="carousel">
+            <div class="carousel-item">
+                <img src="hotelpics/hotel2/bed1.jpg" alt="Room 1">
+                <h3>Family Rooms</h3>
+                <p>⭐⭐⭐⭐</p>
+                <p>$250</p>
+                <a href="BookingHotels.php">
+                    <button class="btn1">Book Now</button>
+                </a>
+            </div>
+            <div class="carousel-item">
+                <img src="hotelpics/hotel2/bed2.jpg" alt="Room 2">
+                <h3>Single Rooms</h3>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>$200</p>
+                <a href="BookingHotels.php">
+                    <button class="btn1">Book Now</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="section">
+        <h2 class="section-title">Our Gallery</h2>
+        <p class="section-subtitle">Exceptuer sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+        <div class="gallery">
+            <img src="hotelpics/hotel2/00fe19ae-1ea5-4368-a84d-1f82cf27f836.jpg" alt="Gallery 1">
+            <img src="hotelpics/hotel2/448d51f5-4b15-47f6-b6a8-cbe7a3179c29.jpg" alt="Gallery 2">
+            <img src="hotelpics/hotel2/d3955b3b-b7e8-423e-b503-6e85a3bce79e.jpg" alt="Gallery 3">
+            <img src="hotelpics/hotel2/Grand Canyon _ South Rim _ Residential Concept Home with Pool.jpg" alt="Gallery 4">
+            <img src="hotelpics/hotel2/tenerife hovima jardin caleta _ Costa adeje.jpg" alt="Gallery 5">
+        </div>
+        
+    </section>
+
+    <section id="services" class="section">
+        <h2 class="section-title">Our Services</h2>
+        <p class="section-subtitle">Exceptuer sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+        <div class="services">
+            <div class="service-card">
+                <h3>Delious Food</h3>
+            </div>
+            <div class="service-card">
+                <h3>Fitness</h3>
+            </div>
+            <div class="service-card">
+                <h3>Inhouse Restaurant</h3>
+            </div>
+            <div class="service-card">
+                <h3>Beauty Spa</h3>
+            </div>
+        </div>
+    </section>
+    <!-- Footer  -->
+<section class="footer">
+    <div class="fot">
+      <div class="info">
+        <h3>contact info</h3>
+        <a href="#"> <i class='bx bx-phone'></i> +123-415-8128</a>
+        <a href="#"> <i class='bx bx-phone'></i> +150-151-8128</a>
+        <a href="#"><i class='bx bx-envelope'></i> stda@gmail.com</a>
+        <a href="#"> <i class='bx bx-map'></i> Egypt</a>
+      </div>
+      <div class="info">
+        <h3>Follow Us</h3>
+        <a href="#"> <i class='bx bxl-facebook-circle'></i> Facebook</a>
+        <a href="#"><i class='bx bxl-twitter'></i> Twitter</a>
+        <a href="#"><i class='bx bxl-instagram-alt'></i> Instagram</a>
+      </div>
+    </div>
+  </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let currentIndex = 0;
+            const items = document.querySelectorAll('.carousel-item');
+            const totalItems = items.length;
+
+            setInterval(() => {
+                items[currentIndex].classList.remove('active');
+                currentIndex = (currentIndex + 1) % totalItems;
+                items[currentIndex].classList.add('active');
+            }, 3000);
+        });
+    </script>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+      $('#toggle-dark-mode').on('click', function () {
+        $('body').toggleClass('dark-mode');
+        $(this).text(function (i, text) {
+          return text === "Dark Mode" ? "Light Mode" : "Dark Mode";
+        });
+      });
+    });
+  </script>
+
+</html>

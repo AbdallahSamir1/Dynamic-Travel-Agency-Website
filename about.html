@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STDA Travel Agency </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="about.css">
+    <script src="about.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="nav-container">
+            <a href="home.html" class="logo"><i class='bx bxs-home'></i>STDA Travel Agency</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="hotels.html">Hotels</a></li>
+                    <li><a href="transportation.html">Transportation</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            <select id="language-selector">
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+            </select>
+            <button id="toggle-dark-mode" class="btn">Light Mode</button>
+            <a href="login.php" class="btn">Log In</a>
+        </div>
+    </header>
+<br>
+    <!-- About Section -->
+    <section class="about container" id="about">
+      <div class="about-img">
+          <img src="pics/abou1.jpg" alt="">
+      </div>
+      <div class="about-text">
+          <h1>About Us</h1>
+          <h2>We Provide The Best <br> Trips For You!</h2>
+          <p>At STDA, we specialize in making your travel experience seamless and unforgettable.</p>
+          <p>Offering a wide range of comfortable hotels and reliable transportation services.</p>
+          <p>Whether you're planning a business trip, family vacation, or a relaxing getaway, we ensure your journey is smooth from start to finish.</p>
+          <p>We’re here to help you create lasting memories, every step of the way. Trust us to handle your travel needs so you can focus on enjoying the adventure ahead!</p>
+          <br>
+          <a href="signup.php" class="btn">Sign in</a>
+      </div>
+  </section>
+  <section class="about container">
+      <div class="about-img">
+          <img src="pics/about3.webp" alt="">
+      </div>
+      <div class="about-text">
+          <p>At STDA, we specialize in making your travel experience seamless and unforgettable.</p>
+          <p>Offering a wide range of comfortable hotels and reliable transportation services.</p>
+          <p>Whether you're planning a business trip, family vacation, or a relaxing getaway, we ensure your journey is smooth from start to finish.</p>
+          <p>We’re here to help you create lasting memories, every step of the way. Trust us to handle your travel needs so you can focus on enjoying the adventure ahead!</p>
+          <br>
+      </div>
+  </section>
+  <!--services-->
+  <div class="h">
+    <h2><span>Our</span>services</h2>
+</div>
+   <section class="sales-section"> 
+    <div class="sales-container">
+      <a href="hotels.html" class="sales-box">
+        <i class='bx bx-user'></i>
+        <h3>The Best Hotels</h3>
+        <p>book your hotel now</p>
+      </a>
+      <!--box2-->
+      <a href="transportation.html" class="sales-box">
+          <i class='bx bx-desktop'></i>
+          <h3>book any transportation you want</h3>
+          <p>Book Your Transportaion</p>
+      </a>
+      <!--box3-->
+    <div class="sales-box">
+          <i class='bx bx-home-alt'></i>
+          <h3>Enjoy Your Next Trip</h3>
+          <p>Learn More About Us</p>
+      
+    </div>
+  </section>
+
+    <!-- Footer Section -->
+    <section class="footer">
+        <div class="fot">
+            <div class="info">
+                <h3>Contact Info</h3>
+                <a href="#"> <i class='bx bx-phone'></i> +123-415-8128</a>
+                <a href="#"> <i class='bx bx-phone'></i> +150-151-8128</a>
+                <a href="#"><i class='bx bx-envelope'></i> stda@gmail.com</a>
+                <a href="#"> <i class='bx bx-map'></i> Egypt</a>
+            </div>
+            <div class="info">
+                <h3>Follow Us</h3>
+                <a href="#"> <i class='bx bxl-facebook-circle'></i> Facebook</a>
+                <a href="#"><i class='bx bxl-twitter'></i> Twitter</a>
+                <a href="#"><i class='bx bxl-instagram-alt'></i> Instagram</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+      $('#toggle-dark-mode').on('click', function () {
+        $('body').toggleClass('dark-mode');
+        $(this).text(function (i, text) {
+          return text === "Dark Mode" ? "Light Mode" : "Dark Mode";
+        });
+      });
+    });
+  </script>
+
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotels</title>
+  <link rel="stylesheet" href="hotels.css">
+  <script src="hotels.js"></script>
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="home.html" class="logo"><i class='bx bxs-home'></i>STDA Travel Agency</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="hotels.html">Hotels</a></li>
+          <li><a href="transportation.html">Transportation</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <select id="language-selector">
+        <option value="en">English</option>
+        <option value="es">Español</option>
+        <option value="fr">Français</option>
+      </select>
+      <button id="toggle-dark-mode" class="btn">Light Mode</button>
+
+      <a href="login.php" class="btn">Log In</a>
+    </div>
+  </header>
+  
+
+  <section class="gallery-section">
+    <h2>Our Featured Hotels</h2>
+    <p>Discover luxury and comfort with our top-rated hotels</p>
+    <div class="gallery-container">
+      <div class="gallery-card">
+        <a href="hotel1.html" target="_blank">
+          <img src="pics/hotel1.avif">
+          <h3>HOVIMA Jardin Caleta</h3>
+          <div class="price-and-button">
+            <p>
+              <span class="price-bold">£95</span>
+              <span class="price-subtext"> /night</span>
+            </p>
+            <a href="BookingHotels.php" class="btn1">Book Now!</a>
+          </div>
+        </a>
+      </div>
+      <div class="gallery-card">
+        <a href="hotel2.html" target="_blank">
+          <img src="pics/HOTEL1 (2).avif">
+          <h3>Laguna Park</h3>
+          <div class="price-and-button">
+            <p>
+              <span class="price-bold">£95</span>
+              <span class="price-subtext"> /night</span>
+            </p>
+            <a href="BookingHotels.php" class="btn1">Book Now!</a>
+          </div>
+        </a>
+      </div>
+      <div class="gallery-card">
+        <a href="hotel3.html" target="_blank">
+          <img src="pics/hotel3.avif">
+          <h3>Columbus Aparthotel</h3>
+          <div class="price-and-button">
+            <p>
+              <span class="price-bold">£77</span>
+              <span class="price-subtext"> /night</span>
+            </p>
+            <a href="BookingHotels.php" class="btn1">Book Now!</a>
+          </div>
+        </a>
+      </div>
+      <div class="gallery-card">
+        <a href="hotel4.html" target="_blank">
+          <img src="pics/hotel4.avif">
+          <h3>Blue Sea Puerto Resort</h3>
+          <div class="price-and-button">
+            <p>
+              <span class="price-bold">£115</span>
+              <span class="price-subtext"> /night</span>
+            </p>
+            <a href="BookingHotels.php" class="btn1">Book Now!</a>
+          </div>
+        </a>
+      </div>
+      <div class="gallery-card">
+        <a href="hotel5.html" target="_blank">
+          <img src="pics/hotel5.avif">
+          <h3>Blue Sea Interpalace</h3>
+          <div class="price-and-button">
+            <p>
+              <span class="price-bold">£75</span>
+              <span class="price-subtext"> /night</span>
+            </p>
+            <a href="BookingHotels.php" class="btn1">Book Now!</a>
+          </div>
+        </a>
+      </div>
+      <div class="gallery-card">
+        <a href="hotel6.html" target="_blank">
+          <img src="pics/hotel6.avif">
+          <h3>Las Piramides</h3>
+          <div class="price-and-button">
+            <p>
+              <span class="price-bold">£100</span>
+              <span class="price-subtext"> /night</span>
+            </p>
+            <a href="BookingHotels.php" class="btn1">Book Now!</a>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- Footer  -->
+<section class="footer">
+  <div class="fot">
+    <div class="info">
+      <h3>contact info</h3>
+      <a href="#"> <i class='bx bx-phone'></i> +123-415-8128</a>
+      <a href="#"> <i class='bx bx-phone'></i> +150-151-8128</a>
+      <a href="#"><i class='bx bx-envelope'></i> stda@gmail.com</a>
+      <a href="#"> <i class='bx bx-map'></i> Egypt</a>
+    </div>
+    <div class="info">
+      <h3>Follow Us</h3>
+      <a href="#"> <i class='bx bxl-facebook-circle'></i> Facebook</a>
+      <a href="#"><i class='bx bxl-twitter'></i> Twitter</a>
+      <a href="#"><i class='bx bxl-instagram-alt'></i> Instagram</a>
+    </div>
+  </div>
+</section>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $('#toggle-dark-mode').on('click', function () {
+      $('body').toggleClass('dark-mode');
+      $(this).text(function (i, text) {
+        return text === "Dark Mode" ? "Light Mode" : "Dark Mode";
+      });
+    });
+  });
+</script>
+
+</html>

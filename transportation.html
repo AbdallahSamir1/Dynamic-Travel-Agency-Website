@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transportation</title>
+  <link rel="stylesheet" href="transportation.css">
+  <script src="transportation.js"></script>
+
+  
+
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="home.html" class="logo"><i class='bx bxs-home'></i>STDA Travel Agency</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="hotels.html">Hotels</a></li>
+          <li><a href="transportation.html">Transportation</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <select id="language-selector">
+        <option value="en">English</option>
+        <option value="es">Español</option>
+        <option value="fr">Français</option>
+      </select>
+      <button id="toggle-dark-mode" class="btn">Light Mode</button>
+      <a href="login.php" class="btn">Log In</a>
+    </div>
+  </header>
+  
+  <section class="gallery-section">
+    <h2>Our Featured Transportaion</h2>
+    <p>Discover luxury and comfort with our top-rated Transportaion</p>
+    <div class="gallery-container">
+        <div class="gallery-card">
+            <a href="booking.php">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3Cc2GqoXqR7EURIHAuhlla-96ey-Puz_j_w&s" alt="plane Image ">
+                <h3>Flight</h3>
+            </a>
+           <a href="booking.php"> <button class="book-now">Explore Now</button></a>
+        </div>
+        <div class="gallery-card">
+            <a href="Bookcar.html" target="_blank">
+                <img src="pics/car.webp" alt="Private Car">
+                <h3>Private Car</h3>
+                <p></p>
+            </a>
+            <a href="booking.php"><button class="book-now">Explore Now</button></a>
+
+        </div>
+        <div class="gallery-card">
+            <a href="Booking.html" target="_blank">
+                <img src="pics/bus.jpeg" alt="">
+                <h3>Buses</h3>
+                <p></p>
+            </a>
+            <a href="booking.php"><button class="book-now">Explore Now</button></a>
+
+        </div>
+    </div>
+</section>
+
+  </body>
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $('#toggle-dark-mode').on('click', function () {
+      $('body').toggleClass('dark-mode');
+      $(this).text(function (i, text) {
+        return text === "Dark Mode" ? "Light Mode" : "Dark Mode";
+      });
+    });
+  });
+</script>
+
+</html>
